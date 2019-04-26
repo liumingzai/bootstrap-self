@@ -6,7 +6,7 @@
 
 ## 二 浏览器支持
 ***下表为Bootstrap支持最新版本的浏览器和平台， ```注意``` [IE8及以上]
-![浏览器支持](assets/images/brow_type.png)
+![浏览器支持](demo/assets/images/brow_type.png)
 
 ## 三 技术储备
 + HTML 了解基本的标签
