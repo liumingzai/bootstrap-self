@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dialog</title>
+  <link rel="stylesheet" href="../vender/css/bootstrap.min.css" />
+  <script src="../vender/js/jquery-3.1.1.min.js"></script>
+  <script src="../vender/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <section style="width:100%;margin: 0 auto;">
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      查看浏览器兼容
+    </button>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <span>&times;</span><span class="sr-only">关闭弹框</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">标题</h4>
+          </div>
+          <div class="modal-body">
+            <p style="height: 200px;">我的git地址:</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary">保存</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

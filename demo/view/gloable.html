@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gloable theme</title>
+  <link rel="stylesheet" href="../vender/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/gloabal.css" />
+ 
+  <script src="../vender/js/jquery-3.1.1.min.js"></script>
+  <script src="../vender/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <section class="container">
+    <div class="full-width">
+      <!-- 导航区 -->
+      <ul class="nav nav-tabs" id="tabs">
+        <li><a href="../index.html">标签</a></li>
+        <li class="active"><a href="./button.html" target="_blank">按钮</a></li>
+        <li><a href="./form.html" target="_blank">表单</a></li>
+        <li><a href="./table.html" target="_blank">表格</a></li>
+        <li><a href="./nav.html" target="_blank">导航</a></li>
+        <li><a href="./image.html" target="_blank">图片</a></li>
+        <li><a href="./dropdown.html" target="_blank">下拉</a></li>
+        <li><a href="./dialog.html" target="_blank">弹框</a></li>
+        <li><a href="./icon.html" target="_blank">图标</a></li>
+        <li class="dropdown pull-right">
+          <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenu">
+            <img class="avatar" src="../assets/images/avater.jpg" width="22px;" height="22px;">胡八
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+            <li><a href="#">挂号信息</a></li>
+            <li><a href="#">检查信息</a></li>
+            <li><a href="#">检验信息</a></li>
+            <li><a href="#">我的消息</a></li>
+            <li><a href="#">诊后管理</a></li>
+            <li class="divider" role="separator"></li>
+            <li style="margin-left: 20px;">个人设置</li>
+          </ul>
+        </li>
+      </ul>
+      <!-- 轮播区 -->
+      <div class="slider-outter">
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-pause="false">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="../assets/images/hospital1.jpg" width="100%" height="220px" alt="first">
+            </div>
+            <div class="item">
+              <img src="../assets/images/hospital2.jpg" width="100%" height="220px" alt="second">
+            </div>
+            <div class="item">
+              <img src="../assets/images/hospital3.jpg" width="100%" height="220px" alt="third">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- 栅格布局内容区 -->
+      <article>
+        <div class="row">
+          <div class="col-md-4">
+            <figure>
+              <a class="a-link" href="#" ref="noopener">
+                <img src="../assets/images/hospital1.jpg" alt="hospital" />
+              </a>
+              <figcaption>
+                <h3 class="show-title">烟台海港</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure>
+              <a class="a-link" href="#" ref="noopener">
+                <img  src="../assets/images/hospital2.jpg" alt="hospital" />
+              </a>
+              <figcaption>
+                <h3 class="show-title">北京医大</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure>
+              <a class="a-link" href="#" ref="noopener">
+                <img src="../assets/images/hospital3.jpg" alt="hospital" />
+              </a>
+              <figcaption>
+                <h3 class="show-title">中日友好</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure>
+              <a class="a-link" href="#" ref="noopener">
+                <img src="../assets/images/hospital2.jpg" alt="hospital" />
+              </a>
+              <figcaption>
+                <h3 class="show-title">望京医院</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure>
+              <a class="a-link" href="#" ref="noopener">
+                <img  src="../assets/images/hospital3.jpg" alt="hospital" />
+              </a>
+              <figcaption>
+                <h3 class="show-title">社区医院</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure>
+              <a class="a-link" href="#" ref="noopener">
+                <img src="../assets/images/hospital1.jpg" alt="hospital" />
+              </a>
+              <figcaption>
+                <h3 class="show-title">爱康医院</h3>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <script type="text/javascript">
+
+    var tabs = document.getElementById('tabs');
+    tabs.onclick = function (e) {
+      var target = e.target || e.srcElement;
+      removeActiveClass(tabs.childNodes);
+      target.parentNode.className = 'active';
+    }
+
+    // 删除class为active的样式
+    function removeActiveClass(nodes) {
+      for(var i=0; i<nodes.length; i++) {
+        nodes[i].className = "";
+      }
+    }
+  </script>
+</body>
+</html>

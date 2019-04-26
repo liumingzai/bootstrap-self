@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>image</title>
+  <link rel="stylesheet" href="../vender/css/bootstrap.min.css" />
+  <style>
+    .container {
+      width: 100%;
+      background: #eee;
+      padding-top: 1rem;
+      margin: 30px auto;
+    }
+        
+    figure {
+      padding: 2rem;
+      display: block;
+      overflow: hidden;
+    }
+
+    .a-link {
+      display: block;
+      overflow: hidden;
+    }
+
+    .a-link > img {
+      height: 224px;
+      width: 100%;
+      text-align: center;
+      transition: width 0.3s ease-in, height 0.3s ease-in;
+      -webkit-transition: width 0.3s ease-in, height 0.3s ease-in;
+    }
+
+    figcaption {
+      display: block;
+      text-align: center;;
+    }
+
+    .show-title {
+      font-size: 1.6rem;
+      font-weight: bold;
+      font-family: '微软雅黑';
+      max-height: 4.4rem;
+      line-height: 2.2rem;
+    }
+
+  </style>
+</head>
+<body>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <figure>
+            <a class="a-link" href="#" ref="noopener">
+              <img src="../assets/images/avater.jpg" class="img-responsive" alt="avatar" />
+            </a>
+            <figcaption>
+              <h3 class="show-title">圆角</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-md-3">
+          <figure>
+            <a class="a-link" href="#" ref="noopener">
+              <img  src="../assets/images/avater1.png" class="img-circle" alt="avatar1" />
+            </a>
+            <figcaption>
+              <h3 class="show-title">圆形</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-md-3">
+          <figure>
+            <a class="a-link" href="#" ref="noopener">
+              <img src="../assets/images/avater2.png" class="img-rounded" alt="avatar2" />
+            </a>
+            <figcaption>
+              <h3 class="show-title">带边框的圆角</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-md-3">
+          <figure>
+            <a class="a-link" href="#" ref="noopener">
+              <img src="../assets/images/avater3.jpg" class="img-thumbnail" alt="avatar3" />
+            </a>
+            <figcaption>
+              <h3 class="show-title">带边框的圆角</h3>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

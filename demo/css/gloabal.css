@@ -1,0 +1,110 @@
+
+.bgcolor {
+  background-color: #eee;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.pull-right {
+  float: right;
+}
+
+.nav {
+  padding: 5px 10px;
+  background: #37474F;
+  height: 50px;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.dropdown {
+  text-align: right; 
+}
+
+#dropdownMenu {
+  text-decoration: none;
+  color:#fff;
+}
+
+.dropdown-menu {
+  position: relative;
+  right: 0px;
+  float: right;
+  left: auto;
+  background: #000;
+  opacity: 0.5;
+}
+
+.dropdown-menu li {
+  color: #fff;
+}
+
+article {
+  margin: 30px auto;
+  width: 100% !important;
+}
+
+figure {
+  display: block;
+  overflow: hidden;
+}
+
+.a-link {
+  display: block;
+  overflow: hidden;
+}
+
+.a-link > img {
+  height: 174px;
+  width: 100%;
+  text-align: center;
+  transition: width 0.3s ease-in, height 0.3s ease-in;
+  -webkit-transition: width 0.3s ease-in, height 0.3s ease-in;
+}
+
+.a-link:hover {
+  transform: scale(1.06);
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+figcaption {
+  display: block;
+  text-align: center;;
+  padding: 1rem;
+}
+
+.show-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: '微软雅黑';
+  max-height: 4.4rem;
+  line-height: 2.2rem;
+}
+
+.slider-outter {
+  max-height: 400px;
+  padding: 30px 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.f14 {
+  font-size: 14px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}

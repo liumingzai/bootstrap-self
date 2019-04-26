@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Navbar</title>
+  <link rel="stylesheet" href="../vender/css/bootstrap.min.css" />
+  <style>
+    section {
+      padding: 20px;
+      margin: 0;
+    }
+
+    h3 {
+      margin: 20px auto;
+      border-bottom: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h3>可切换导航</h3>
+    <ul class="nav nav-tabs" id="tabs">
+      <li class="active"><a href="#">首页</a></li>
+      <li><a href="#">预约挂号</a></li>
+      <li><a href="#">按科室找医生</a></li>
+      <li><a href="#">按疾病找医生</a></li>
+      <li><a href="#">家庭医生</a></li>
+      <li><a href="#">医院简介</a></li>
+      <li><a href="#">科室简介</a></li>
+      <li><a href="#">海外名医</a></li>
+      <li><a href="#">医院动态</a></li>
+    </ul>
+    <h3>胶囊式导航</h3>
+    <ul class="nav nav-pills" id="pills">
+      <li class="active"><a href="#">首页</a></li>
+      <li><a href="#">预约挂号</a></li>
+      <li><a href="#">按科室找医生</a></li>
+      <li><a href="#">按疾病找医生</a></li>
+      <li><a href="#">家庭医生</a></li>
+      <li><a href="#">医院简介</a></li>
+      <li><a href="#">科室简介</a></li>
+      <li><a href="#">海外名医</a></li>
+      <li><a href="#">医院动态</a></li>
+    </ul>
+    <h3>垂直导航</h3>
+    <ul class="nav nav-pills nav-stacked" id="stacked" >
+      <li class="active"><a href="#">首页</a></li>
+      <li><a href="#">预约挂号</a></li>
+      <li><a href="#">按科室找医生</a></li>
+      <li><a href="#">按疾病找医生</a></li>
+      <li><a href="#">家庭医生</a></li>
+      <li><a href="#">医院简介</a></li>
+      <li><a href="#">科室简介</a></li>
+      <li><a href="#">海外名医</a></li>
+      <li><a href="#">医院动态</a></li>
+    </ul>
+  </section>
+  <script type="text/javascript">
+  
+      // 使用事件代理完成tab样式切换
+      var pill_tabs = document.getElementById('pills');
+      pill_tabs.onclick = function (e) {
+        var target = e.target || e.srcElement;
+        removeActiveClass(pill_tabs.childNodes);
+        target.parentNode.className = 'active';
+      }
+
+      var tabs = document.getElementById('tabs');
+      tabs.onclick = function (e) {
+        var target = e.target || e.srcElement;
+        removeActiveClass(tabs.childNodes);
+        target.parentNode.className = 'active';
+      }
+
+      var stacked_tabs = document.getElementById('stacked');
+      stacked_tabs.onclick = function (e) {
+        var target = e.target || e.srcElement;
+        removeActiveClass(stacked_tabs.childNodes);
+        target.parentNode.className = 'active';
+      }
+
+      // 删除class为active的样式
+      function removeActiveClass(nodes) {
+        for(var i=0; i<nodes.length; i++) {
+          nodes[i].className = "";
+        }
+      }
+  </script>
+</body>
+</html>

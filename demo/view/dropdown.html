@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dropdown</title>
+  <link rel="stylesheet" href="../vender/css/bootstrap.min.css" />
+  <script src="../vender/js/jquery-3.1.1.min.js"></script>
+  <script src="../vender/js/bootstrap.min.js"></script>
+  <style>
+    .avatar {
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+    .dropdown {
+      background: #37474F;
+      text-align: right; 
+      padding: 10px 20px;
+    }
+    #dropdownMenu {
+      margin-right: 50px;
+      text-decoration: none;
+      color:#fff;
+    }
+    .dropdown-menu {
+      right: 0px;
+      float: right;
+      left: auto;
+      background: #000;
+      opacity: 0.5;
+    }
+
+    .dropdown-menu li {
+      color: #fff;
+    }
+
+  </style>
+</head>
+<body>
+  <section>
+    <div class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenu">
+          <img class="avatar" src="../assets/images/avater.jpg" width="22px;" height="22px;">胡八
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+        <li><a href="#">挂号信息</a></li>
+        <li><a href="#">检查信息</a></li>
+        <li><a href="#">检验信息</a></li>
+        <li><a href="#">我的消息</a></li>
+        <li><a href="#">诊后管理</a></li>
+        <li class="divider" role="separator"></li>
+        <li style="margin-left: 20px;">个人设置</li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
